@@ -1,0 +1,196 @@
+/* Resetando margens e padding para garantir um layout limpo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f8f9;
+    color: #333;
+    line-height: 1.6;
+    width: 21cm; /* Largura da folha A4 */
+    height: 29.7cm; /* Altura da folha A4 */
+    padding: 20mm; /* Margens internas para garantir o espaçamento correto */
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Estilo do Container Principal */
+.container {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-left: 6px solid #00bcd4; /* Bordas finas para dar um toque moderno */
+    font-size: 14px; /* Definindo o tamanho fixo da fonte */
+}
+
+/* Cabeçalho (Nome e Dados principais) */
+h1 {
+    font-size: 2.2em;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+    position: relative;
+}
+
+/* A frase de descrição, logo abaixo do nome */
+h1 span {
+    font-size: 1.1em;
+    color: #777;
+    font-weight: normal;
+}
+
+/* Subtítulos (h5) */
+h5 {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+/* Divisão entre as seções */
+h5::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-color: #00bcd4;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+/* Parágrafos e texto geral */
+p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Estilo para o <hr> (divisão de seções) */
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0;
+}
+
+/* Estilo para o Bloco de Contato */
+.contatos p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.contatos a {
+    color: #00bcd4;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contatos a:hover {
+    text-decoration: underline;
+}
+
+/* Lista de Habilidades Técnicas */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+ul li {
+    font-size: 1.1em;
+    color: #555;
+    position: relative;
+    margin-bottom: 15px;
+    padding-left: 25px;
+}
+
+ul li::before {
+    content: "•";
+    color: #00bcd4;
+    font-size: 1.4em;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Experiência Profissional */
+.experiencia-item {
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-left: 5px solid #00bcd4;
+    border-radius: 6px;
+}
+
+.experiencia-item h3 {
+    font-size: 1.3em;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.experiencia-item p {
+    font-size: 1em;
+    color: #777;
+    margin-bottom: 8px;
+}
+
+/* Efeito de hover para as seções de experiência e habilidades */
+ul li:hover,
+.experiencia-item:hover {
+    background-color: #f0f0f0;
+    border-left: 5px solid #00bcd4;
+    box-shadow: 0 3px 10px rgba(0, 188, 212, 0.2);
+    transform: translateX(5px);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Rodapé ou informações complementares */
+#informacoes-complementares p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Links */
+a {
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.1em;
+    color: #777;
+}
+
+footer a {
+    font-weight: bold;
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
